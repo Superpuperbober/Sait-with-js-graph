@@ -1,0 +1,507 @@
+body {
+  top: 100px;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, Open Sans, Roboto, Helvetica Neue, Helvetica, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  background: #f2f2f3;
+}
+.centralBlock {
+  margin: auto;
+  width: 90%;
+  min-height: 700px;
+  min-width: 100px;
+}
+.centralBlock a {
+  color: #000;
+  text-decoration: none;
+}
+.centralBlock a:hover {
+  -webkit-text-decoration: #ffa500;
+  text-decoration: #ffa500;
+  color: #ffa500;
+}
+.centralBlock .galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  justify-items: stretch;
+  grid-template-areas: "description A B C D E F G H I";
+  height: auto;
+  margin-bottom: 4vh;
+  background: #fff;
+  padding: 10px;
+  align-items: center;
+  vertical-align: center;
+}
+.centralBlock .galleryGrid img {
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.centralBlock .galleryGrid img:hover {
+  width: 110%;
+  height: 110%;
+  transition: 0.5s;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.centralBlock .galleryGrid img:not(:hover) {
+  transition: 0.5s;
+}
+.centralBlock .galleryGrid .description {
+  grid-area: description;
+}
+.centralBlock .galleryGrid .description p {
+  font-size: 12pt;
+  text-align: justify;
+}
+.centralBlock .galleryGrid .description .top p {
+  font-size: 15pt;
+  font-weight: bold;
+}
+.centralBlock .galleryGrid .description .top p:hover {
+  -webkit-text-decoration: #c4beba;
+  text-decoration: #c4beba;
+  color: #c4beba;
+}
+.centralBlock .galleryGrid .description .top p:not(:hover) {
+  transition: 0.5s;
+}
+.centralBlock .galleryGrid .img1 {
+  grid-area: A;
+}
+.centralBlock .galleryGrid .img2 {
+  grid-area: B;
+}
+.centralBlock .galleryGrid .img3 {
+  grid-area: C;
+}
+.centralBlock .galleryGrid .img4 {
+  grid-area: D;
+}
+.centralBlock .galleryGrid .img5 {
+  grid-area: E;
+}
+.centralBlock .galleryGrid .img6 {
+  grid-area: F;
+}
+.centralBlock .galleryGrid .img7 {
+  grid-area: G;
+}
+.centralBlock .galleryGrid .img8 {
+  grid-area: H;
+}
+.centralBlock .galleryGrid .img9 {
+  grid-area: I;
+}
+.centralBlock .galleryGrid .img9 p {
+  font-size: 12pt;
+  text-align: justify;
+}
+.centralBlock .galleryGrid .img9 .top p {
+  font-size: 15pt;
+  font-weight: bold;
+}
+.centralBlock .galleryGrid .img9 .top p:hover {
+  -webkit-text-decoration: #c4beba;
+  text-decoration: #c4beba;
+  color: #c4beba;
+}
+.centralBlock .galleryGrid .img9 .top p:not(:hover) {
+  transition: 0.5s;
+}
+.centralBlock .galleryBIGGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0.2fr 1fr 1fr;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  justify-items: stretch;
+  grid-template-areas: "upu upu upu upu upu" "A B C D E" "F G H I description";
+  height: auto;
+  margin-bottom: 4vh;
+  background: #fff;
+  padding: 10px;
+  align-items: center;
+  vertical-align: center;
+}
+.centralBlock .galleryBIGGrid img {
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.centralBlock .galleryBIGGrid img:hover {
+  width: 105%;
+  height: 105%;
+  transition: 0.5s;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.centralBlock .galleryBIGGrid img:not(:hover) {
+  transition: 0.5s;
+}
+.centralBlock .galleryBIGGrid .description {
+  grid-area: description;
+}
+.centralBlock .galleryBIGGrid .description p {
+  font-size: 12pt;
+  text-align: justify;
+}
+.centralBlock .galleryBIGGrid .description .top p {
+  font-size: 15pt;
+  font-weight: bold;
+}
+.centralBlock .galleryBIGGrid .description .top p:hover {
+  -webkit-text-decoration: #c4beba;
+  text-decoration: #c4beba;
+  color: #c4beba;
+}
+.centralBlock .galleryBIGGrid .description .top p:not(:hover) {
+  transition: 0.5s;
+}
+.centralBlock .galleryBIGGrid .img1 {
+  grid-area: A;
+}
+.centralBlock .galleryBIGGrid .img2 {
+  grid-area: B;
+}
+.centralBlock .galleryBIGGrid .img3 {
+  grid-area: C;
+}
+.centralBlock .galleryBIGGrid .img4 {
+  grid-area: D;
+}
+.centralBlock .galleryBIGGrid .img5 {
+  grid-area: E;
+}
+.centralBlock .galleryBIGGrid .img6 {
+  grid-area: F;
+}
+.centralBlock .galleryBIGGrid .img7 {
+  grid-area: G;
+}
+.centralBlock .galleryBIGGrid .img8 {
+  grid-area: H;
+}
+.centralBlock .galleryBIGGrid .img9 {
+  grid-area: I;
+}
+.centralBlock .galleryBIGGrid .upu {
+  grid-area: upu;
+  font-size: 22pt;
+  font-weight: bold;
+  text-align: center;
+}
+.centralBlock .galleryDOUBLEGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1fr repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  justify-items: stretch;
+  grid-template-areas: "upu upu upu . uvu uvu uvu" "A B C . AA BB CC" "D E F . . . ." "G H I . . . .";
+  height: auto;
+  margin-bottom: 4vh;
+  background: #111010;
+  padding: 10px;
+  align-items: center;
+  vertical-align: center;
+}
+.centralBlock .galleryDOUBLEGrid img {
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.centralBlock .galleryDOUBLEGrid img:hover {
+  width: 110%;
+  height: 110%;
+  transition: 0.5s;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.centralBlock .galleryDOUBLEGrid img:not(:hover) {
+  transition: 0.5s;
+}
+.centralBlock .galleryDOUBLEGrid .img1 {
+  grid-area: A;
+}
+.centralBlock .galleryDOUBLEGrid .img2 {
+  grid-area: B;
+}
+.centralBlock .galleryDOUBLEGrid .img3 {
+  grid-area: C;
+}
+.centralBlock .galleryDOUBLEGrid .img4 {
+  grid-area: D;
+}
+.centralBlock .galleryDOUBLEGrid .img5 {
+  grid-area: E;
+}
+.centralBlock .galleryDOUBLEGrid .img6 {
+  grid-area: F;
+}
+.centralBlock .galleryDOUBLEGrid .img7 {
+  grid-area: G;
+}
+.centralBlock .galleryDOUBLEGrid .img8 {
+  grid-area: H;
+}
+.centralBlock .galleryDOUBLEGrid .img9 {
+  grid-area: I;
+}
+.centralBlock .galleryDOUBLEGrid .upu {
+  grid-area: upu;
+  font-size: 22pt;
+  font-weight: bold;
+  text-align: center;
+  color: #c4beba;
+}
+.centralBlock .galleryDOUBLEGrid .uvu {
+  grid-area: uvu;
+  font-size: 22pt;
+  font-weight: bold;
+  text-align: center;
+  color: #c4beba;
+}
+.centralBlock .galleryDOUBLEGrid .AA {
+  grid-area: AA;
+}
+.centralBlock .galleryDOUBLEGrid .BB {
+  grid-area: BB;
+}
+.centralBlock .galleryDOUBLEGrid .CC {
+  grid-area: CC;
+}
+.menuFlex {
+  background-color: #070602;
+  position: fixed;
+  padding: padding/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  top: 0;
+  padding: 0 20px;
+  height: 57px;
+}
+.menuFlex .imgItem {
+  margin-top: 3px;
+  margin-right: 40px;
+  padding-left: 0;
+  margin-left: 0;
+  width: 10%;
+  height: 10%;
+}
+.menuFlex span {
+  top: 10px;
+  margin-top: 1px;
+  background-color: #e48f13;
+  padding: 20px;
+}
+.menuFlex .menuItem {
+  font-size: 16pt;
+  text-align: center;
+  top: 10px;
+  justify-content: space-around;
+  vertical-align: center;
+  line-height: 2.5em;
+  color: #fff;
+}
+.menuFlex .menuItem a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+.menuFlex .menuItem a:hover {
+  background-color: #c4beba;
+  padding: 5px;
+  transition: 0.3s;
+}
+.menuFlex .menuItem a:not(:hover) {
+  transition: 0.5s;
+}
+.imagesFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: paddingValueWidth;
+}
+.imagesFlexItem {
+  width: 33.33%;
+  height: 40%;
+  overflow: hidden;
+  margin: 5px;
+}
+.imagesFlexItem img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.imagesFlexItem img:hover {
+  transform: translateY(-15px);
+  box-shadow: #c4c4c4 0 0 5px;
+}
+@media (max-width: 520px) {
+  .menuFlex .imgItem {
+    width: 40px;
+    height: 40px;
+  }
+  .menuFlex span {
+    line-height: 1em;
+  }
+  .menuFlex .menuItem {
+    line-height: 5em;
+    font-size: 10pt;
+  }
+}
+@media (max-width: 700px) {
+  .centralBlock .galleryGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "description description" "A B" "C D" "E F" "G H" "I .";
+  }
+  .centralBlock .galleryBIGGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "upu upu" "A B" "C D" "E F" "G H" "I description";
+  }
+  .centralBlock .galleryDOUBLEGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: "upu upu" "A B" "C D" "E F" "G H" "I ." "uvu uvu" "AA BB" "CC .";
+  }
+}
+.details_block {
+  display: block;
+  margin: 20px;
+  font-size: 16pt;
+}
+.details_block .field {
+  margin: 10px;
+}
+.tableBlock {
+  padding-bottom: 10px;
+  overflow: auto;
+  font-size: 16pt;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid #000;
+}
+summary {
+  font-size: 16pt;
+}
+.galleryGridsort {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  justify-items: stretch;
+  grid-template-areas: " A B C ";
+  height: auto;
+  margin-bottom: 4vh;
+  background: #fff;
+  padding: 10px;
+  align-items: center;
+  vertical-align: center;
+}
+.galleryGridsort .img1 {
+  grid-area: A;
+}
+.galleryGridsort .img2 {
+  grid-area: B;
+}
+.galleryGridsort .img3 {
+  grid-area: C;
+}
+@media (max-width: 800px) {
+  .tableBlock {
+    width: 100%;
+  }
+  .tableBlock table {
+    font-size: 10px;
+    width: 100%;
+  }
+  .details_block {
+    font-size: 10pt;
+  }
+  summary {
+    font-size: 10pt;
+  }
+  legend {
+    font-size: 10pt;
+  }
+  .galleryGridsort {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: " A" "B" "C ";
+  }
+}
+.about {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  justify-items: stretch;
+  grid-template-areas: "A B";
+  background: #fff;
+}
+.about hr {
+  width: 25%;
+}
+.about i {
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+.about p {
+  text-align: justify;
+  margin-right: 35px;
+}
+.about img {
+  height: 100%;
+  width: 100%;
+}
+.about h2 {
+  text-align: center;
+}
+.about .img1 {
+  grid-area: A;
+}
+.about .text1 {
+  grid-area: B;
+}
+@media (max-width: 700px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "A" "B";
+  }
+}

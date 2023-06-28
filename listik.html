@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://d3js.org/d3.v7.js"></script>
+  </head>
+  <body>
+    <div class="menuFlex">
+      <div class="imgItem"><a href="index.html"><img src="img/376532.jpg"></a></div>
+      <div class="menuItem"><a href="index.html">Главная</a></div>
+      <div class="menuItem"><a href="listik.html">Статистика</a></div>
+      <div class="menuItem"><a href="gallery.html">Галерея</a></div>
+    </div>
+    <div class="centralBlock">
+      <body onload="drawTable()">
+        <div class="galleryGridsort">
+          <div class="details_block">
+            <details>
+              <summary>График</summary>
+              <form>
+                <div class="field">
+                  <legend>Значение по оси OX:<br>
+                    <input type="radio" name="ox" value="Mark" checked="checked"> Марка<br>
+                    <input type="radio" name="ox" value="Country"> Страна производитель<br>
+                  </legend>
+                </div>
+                <div class="field">
+                  <legend>Тип графика:<br>
+                    <input type="radio" name="type" value="dotted" checked="checked"> Точечный<br>
+                    <input type="radio" name="type" value="histogram"> Гистограмма<br>
+                  </legend>
+                </div>
+                <div class="field">
+                  <legend>Результат:<br>
+                    <input type="checkbox" name="oy"> Максимальная цена<br>
+                    <input type="checkbox" name="oy"> Минимальная цена<br>
+                    <input type="button" value="Построить" id="graphButton">
+                  </legend>
+                </div>
+              </form>
+            </details>
+          </div>
+          <div class="details_block">
+            <details>
+              <summary>Фильтр</summary><br>
+              <label>Марка:
+                <input type="text" name="name" id="MarkFilter">
+              </label><br>
+              <label>Страна производитель:
+                <input type="text" name="author" id="CountryFilter">
+              </label><br>
+              <label>Модель:
+                <input type="text" name="publisher" id="CarNameFilter">
+              </label><br>
+              <label>В какой части была:
+                <input type="text" name="audith" id="PartFilter">
+              </label><br>
+              <input type="button" value="Найти" onclick="filterButton()"><br>
+            </details>
+          </div>
+          <div class="details_block">
+            <details>
+              <summary>Сортировка</summary><br>Первый уровень:
+              <select name="audith" id="selectLevel1" onchange="getActualOptions()">
+                <option value="No" selected>Нет</option>
+                <option value="CarName">Название машины</option>
+                <option value="Mark">Марка</option>
+                <option value="Power">Кол-во лошадиных сил</option>
+                <option value="Part">В какой части фильма снималась</option>
+                <option value="Price">Цена</option>
+                <option value="Country">Страна</option>
+              </select>
+              <label>По убыванию?
+                <input type="checkbox" id="sortOrder1">
+              </label><br><br>Второй уровень:
+              <select name="author" id="selectLevel2" onchange="getActualOptions()">
+                <option value="No" selected>Нет</option>
+                <option value="CarName">Название машины</option>
+                <option value="Mark">Марка</option>
+                <option value="Power">Кол-во лошадиных сил</option>
+                <option value="Part">В какой части фильма снималась</option>
+                <option value="Price">Цена</option>
+                <option value="Country">Страна</option>
+              </select>
+              <label>По убыванию?
+                <input type="checkbox" id="sortOrder2">
+              </label><br><br>Третий уровень:
+              <select name="name" id="selectLevel3" onchange="getActualOptions()">
+                <option value="No" selected>Нет</option>
+                <option value="CarName">Название машины</option>
+                <option value="Mark">Марка</option>
+                <option value="Power">Кол-во лошадиных сил</option>
+                <option value="Part">В какой части фильма снималась</option>
+                <option value="Price">Цена</option>
+                <option value="Country">Страна</option>
+              </select>
+              <label>По убыванию?
+                <input type="checkbox" id="sortOrder3">
+              </label><br><br>
+              <input type="button" value="Найти" onclick="sortButton()">
+            </details>
+          </div>
+        </div>
+        <svg></svg><br>
+        <input type="button" value="Скрыть таблицу" id="hideButton">
+        <input type="button" value="Сброс" onclick="resetButton()">
+        <div class="tableBlock" id="table"></div>
+      </body>
+      <script src="js/WorkingWithData.js"></script>
+      <script src="js/graph.js"></script>
+    </div>
+  </body>
+</html>
